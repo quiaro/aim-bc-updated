@@ -72,8 +72,3 @@ async def main(message: cl.Message):
             await msg.stream_token(token)
 
     await msg.send()
-
-    # # Send a response back to the user
-    # await cl.Message(
-    #     content=f"Received: {message.content}",
-    # ).send()
