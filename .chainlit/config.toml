@@ -2,7 +2,6 @@
 # Whether to enable telemetry (default: true). No personal data is collected.
 enable_telemetry = true
 
-
 # List of environment variables to be provided by each user to use the app.
 user_env = []
 
@@ -54,15 +53,8 @@ edit_message = true
     # Sample rate of the audio
     sample_rate = 24000
 
-[features.mcp.sse]
-    enabled = true
 
-[features.mcp.stdio]
-    enabled = true
-    # Only the executables in the allow list can be used for MCP stdio server.
-    # Only need the base name of the executable, e.g. "npx", not "/usr/bin/npx".
-    # Please don't comment this line for now, we need it to parse the executable name.
-    allowed_executables = [ "npx", "uvx" ]
+mcp = false
 
 [UI]
 # Name of the assistant.
